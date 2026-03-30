@@ -7,6 +7,7 @@ The Self-Help Diary is designed to provide users with a digital platform to main
 ## APIs
 
 The project plans to integrate multiple APIs in the future to enhance its functionalities. Currently subject to change upon further testing
+- https://zenquotes.io/
 
 ## Features
 
