@@ -1,3 +1,16 @@
+:root{
+    --color:antiquewhite;
+    --accent:black;
+}
+
 #quotetop,#quotebottom{
     text-align: center;
+}
+
+body{
+    background-color: var(--color);
+}
+
+#texteditor{
+    border-style: dotted;
 }
