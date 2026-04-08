@@ -1,33 +1,42 @@
-:root{
-    --color:antiquewhite;
-    --accent:black;
+:root {
+  --color: antiquewhite;
+  --accent: black;
 }
-*{
-    color: var(--accent);
-}
-
-#quotetop,#quotebottom{
-    text-align: center;
+* {
+  color: var(--accent);
 }
 
-body{
-    background-color: var(--color);
+#quotetop,
+#quotebottom {
+  text-align: center;
 }
 
-#texteditor{
-    border-style: dotted;
-    width: 95vw;
-    height: 50vh;
-    resize: none;
+body {
+  background-color: var(--color);
 }
 
-#date{
-    text-align: center;
+#texteditor {
+  border-style: dotted;
+  width: 95vw;
+  height: 50vh;
+  resize: none;
 }
 
-.handwriting{
-    font-family: 'Waiting for the Sunrise', cursive; 
-  font-size:13px; 
-  letter-spacing: 1px; 
+#date {
+  text-align: center;
+}
 
+.handwriting {
+  font-family: "Waiting for the Sunrise", cursive;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+button svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  margin-right: 0.5em;
+  color: var(--accent);
+  fill: currentColor;
 }
