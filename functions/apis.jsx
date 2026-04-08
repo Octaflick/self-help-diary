@@ -4,5 +4,8 @@ export let quotesapi = async (url) => {
   return data.map((item) => item.content.rendered);
 };
 
-export let time
+export let time = ()=>{
+  let time = new Date()
+  return time.toString()
+}
 
