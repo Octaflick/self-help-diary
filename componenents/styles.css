@@ -15,6 +15,11 @@ body {
   background-color: var(--color);
 }
 
+#texteditor,#theme-button{
+  background-color: var(--accent);
+  color: var(--color);
+}
+
 #texteditor {
   border-style: dotted;
   width: 95vw;
@@ -39,4 +44,9 @@ button svg {
   margin-right: 0.5em;
   color: var(--accent);
   fill: currentColor;
+}
+
+.inputarea{
+  display: flex;
+  justify-content: center;
 }

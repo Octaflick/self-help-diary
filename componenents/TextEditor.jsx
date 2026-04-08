@@ -1,5 +1,7 @@
 let TextEditor = ()=>{
-    return <textarea className="handwriting" res id="texteditor" placeholder="Start Venting ...." ></textarea>
+    return <div className="inputarea">
+        <textarea className="handwriting" id="texteditor" placeholder="Start Venting ...." ></textarea>
+    </div>
 }
 
 export default TextEditor
