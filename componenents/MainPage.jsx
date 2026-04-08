@@ -2,16 +2,17 @@ import TextEditor from "./TextEditor"
 import { useState } from "react";
 import { time } from "../functions/apis";
 
-export default function MainPage() {
-  let [theme,setTheme] = useState(false)
+export default function MainPage({theme,setTheme}) {
 
   let changetheme = ()=>{
     
     if (theme){
       document.documentElement.style.setProperty("--color","#101010")
+      document.documentElement.style.setProperty("--accent","antiquewhite")
       setTheme(false)
     }else{
       document.documentElement.style.setProperty("--color","antiquewhite")
+      document.documentElement.style.setProperty("--accent","#101010")
       setTheme(true)
     }
 

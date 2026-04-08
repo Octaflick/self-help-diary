@@ -2,6 +2,9 @@
     --color:antiquewhite;
     --accent:black;
 }
+*{
+    color: var(--accent);
+}
 
 #quotetop,#quotebottom{
     text-align: center;
