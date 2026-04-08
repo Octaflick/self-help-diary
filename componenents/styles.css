@@ -16,4 +16,18 @@ body{
 
 #texteditor{
     border-style: dotted;
+    width: 95vw;
+    height: 50vh;
+    resize: none;
+}
+
+#date{
+    text-align: center;
+}
+
+.handwriting{
+    font-family: 'Waiting for the Sunrise', cursive; 
+  font-size:13px; 
+  letter-spacing: 1px; 
+
 }
