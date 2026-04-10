@@ -1,52 +1,85 @@
 :root {
-  --color: antiquewhite;
-  --accent: black;
+	--color: antiquewhite;
+	--accent: black;
 }
 * {
-  color: var(--accent);
+	color: var(--accent);
 }
 
 #quotetop,
-#quotebottom {
-  text-align: center;
+#quotebottom ,#time{
+	text-align: center;
+	font-family: "Courier New", Courier, monospace;
 }
 
 body {
-  background-color: var(--color);
+	background-color: var(--color);
 }
 
-#texteditor,#theme-button{
-  background-color: var(--accent);
-  color: var(--color);
+
+#mainpage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	position: relative;
+	gap: 0rem; 
+	padding: 2rem;
+  /* use gap later */
+}
+#start-writing {
+	cursor: pointer;
+	text-align: center;
+  font-size: larger;
+}
+
+#texteditor{
+
+
+	background-color: var(--accent);
+	color: var(--color);
+}
+
+#theme-button {
+	background-color: var(--color);
+	color: var(--accent);
 }
 
 #texteditor {
-  border-style: dotted;
-  width: 95vw;
-  height: 50vh;
-  resize: none;
+	border-style: dotted;
+	width: 95vw;
+	height: 50vh;
+	resize: none;
+}
+
+#theme-button {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	z-index: 10;
 }
 
 #date {
-  text-align: center;
+	text-align: center;
 }
 
 .handwriting {
-  font-family: "Waiting for the Sunrise", cursive;
-  font-size: 13px;
-  letter-spacing: 1px;
+	font-family: "Waiting for the Sunrise", cursive;
+	font-size: 13px;
+	letter-spacing: 1px;
 }
 
 button svg {
-  width: 1em;
-  height: 1em;
-  vertical-align: middle;
-  margin-right: 0.5em;
-  color: var(--accent);
-  fill: currentColor;
+	width: 1em;
+	height: 1em;
+	vertical-align: middle;
+	margin-right: 0.5em;
+	color: var(--accent);
+	fill: currentColor;
 }
 
-.inputarea{
-  display: flex;
-  justify-content: center;
+.inputarea {
+	display: flex;
+	justify-content: center;
 }
