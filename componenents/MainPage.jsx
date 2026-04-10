@@ -1,9 +1,10 @@
 import TextEditor from "./TextEditor";
+import { quotesapi } from "../functions/apis";
 import { useEffect } from "react";
 import { time } from "../functions/apis";
 
 export default function MainPage({ theme, setTheme }) {
-  // keep CSS vars in sync with `theme`
+
   useEffect(() => {
     if (theme) {
       // light theme
@@ -18,13 +19,15 @@ export default function MainPage({ theme, setTheme }) {
 
   const changetheme = () => setTheme((prev) => !prev);
 
+  console.log()
+
   return (
     <div id="mainpage">
       <p id="time">{time()}</p>
       <p id="quotetop">Quote Top</p>
       <TextEditor />
       <p id="quotebottom">Quote Bottom</p>
-      <button id="theme-button" onClick={changetheme} type="button">
+      <button id="theme-button" onClick={changetheme} type="button"> 
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="1em"
