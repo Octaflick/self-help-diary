@@ -7,7 +7,8 @@
 }
 
 #quotetop,
-#quotebottom ,#time{
+#quotebottom,
+#time {
 	text-align: center;
 	font-family: "Courier New", Courier, monospace;
 }
@@ -16,7 +17,6 @@ body {
 	background-color: var(--color);
 }
 
-
 #mainpage {
 	display: flex;
 	flex-direction: column;
@@ -24,29 +24,19 @@ body {
 	justify-content: center;
 	min-height: 100vh;
 	position: relative;
-	gap: 0rem; 
+	gap: 0rem;
 	padding: 2rem;
-  /* use gap later */
+	/* use gap later */
 }
 #start-writing {
 	cursor: pointer;
 	text-align: center;
-  font-size: larger;
-}
-
-#texteditor{
-
-
-	background-color: var(--accent);
-	color: var(--color);
-}
-
-#theme-button {
-	background-color: var(--color);
-	color: var(--accent);
+	font-size: larger;
 }
 
 #texteditor {
+	background-color: var(--accent);
+	color: var(--color);
 	border-style: dotted;
 	width: 95vw;
 	height: 50vh;
@@ -54,14 +44,12 @@ body {
 }
 
 #theme-button {
+	background-color: var(--color);
+	color: var(--accent);
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
 	z-index: 10;
-}
-
-#date {
-	text-align: center;
 }
 
 .handwriting {
@@ -77,9 +65,4 @@ button svg {
 	margin-right: 0.5em;
 	color: var(--accent);
 	fill: currentColor;
-}
-
-.inputarea {
-	display: flex;
-	justify-content: center;
 }

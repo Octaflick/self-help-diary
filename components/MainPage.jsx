@@ -1,35 +1,21 @@
 import TextEditor from "./TextEditor";
-import { quotesapi } from "../functions/apis";
+import { quotesapi } from "../functions/apis.jsx";
 import { useEffect, useState } from "react";
-import { time } from "../functions/apis";
+import { time } from "../functions/apis.jsx";
+import { getTwoRandomQuotes } from "../functions/helpers.jsx";
+import { LIGHT_THEME, DARK_THEME } from "../functions/themeConfig.jsx";
 
 export default function MainPage({ theme, setTheme }) {
 	useEffect(() => {
-		if (theme) {
-			// light theme
-			document.documentElement.style.setProperty("--color", "antiquewhite");
-			document.documentElement.style.setProperty("--accent", "#101010");
-		} else {
-			// dark theme
-			document.documentElement.style.setProperty("--color", "#101010");
-			document.documentElement.style.setProperty("--accent", "antiquewhite");
-		}
+		const t = theme ? LIGHT_THEME : DARK_THEME;
+		document.documentElement.style.setProperty("--color", t.color);
+		document.documentElement.style.setProperty("--accent", t.accent);
 	}, [theme]);
 
 	const changetheme = () => setTheme((prev) => !prev);
 
 	const [topQuote, setTopQuote] = useState("");
 	const [bottomQuote, setBottomQuote] = useState("");
-
-	const getTwoRandomQuotes = (arr) => {
-		if (!Array.isArray(arr) || arr.length === 0) return ["", ""];
-		if (arr.length === 1) return [arr[0], ""];
-		const n = arr.length;
-		const i1 = Math.floor(Math.random() * n);
-		let i2 = Math.floor(Math.random() * (n - 1));
-		if (i2 >= i1) i2 += 1;
-		return [arr[i1], arr[i2]];
-	};
 
 	useEffect(() => {
 		(async () => {
