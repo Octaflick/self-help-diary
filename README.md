@@ -11,8 +11,6 @@ The project plans to integrate multiple APIs in the future to enhance its functi
 
 ## Features
 
-- **Multi-page entries**: Users can create detailed diary entries spanning multiple pages.
-- **Search functionality**: Easily search through past entries to find specific thoughts or topics.
 - **Customizable themes**: Personalize the diary's appearance with light and dark themes.
 - **Range of self-help quotes**: Various range of self-help thoughts to guide the user through their writing process.
 
@@ -22,11 +20,3 @@ The project plans to integrate multiple APIs in the future to enhance its functi
 - CSS
 - JavaScript
 - React (Basic implementation)
-
-## Project Setup and Run
-
-TBD
-
-### Prerequisites
-
-TBD
